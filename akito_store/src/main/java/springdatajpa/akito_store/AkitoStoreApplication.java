@@ -6,8 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AkitoStoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AkitoStoreApplication.class, args);
-	}
+    public static void main(String[] args) {
+
+        SpringApplication.run(AkitoStoreApplication.class, args);
+    }
 
 }
