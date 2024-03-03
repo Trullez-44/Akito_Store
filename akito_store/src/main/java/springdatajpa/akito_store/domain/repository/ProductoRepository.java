@@ -1,4 +1,7 @@
 package springdatajpa.akito_store.domain.repository;
 
-public interface ProductoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import springdatajpa.akito_store.persistence.entity.Producto;
+
+public interface ProductoRepository extends JpaRepository<Producto, Long> {
 }

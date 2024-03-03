@@ -1,17 +1,8 @@
 package springdatajpa.akito_store.domain.repository;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import org.springframework.data.jpa.repository.JpaRepository;
+import springdatajpa.akito_store.persistence.entity.ProductoCarrito;
+import springdatajpa.akito_store.persistence.entity.ProductoCarritoId;
 
-@Entity
-public interface ProductoCarritoRepository {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long pedidoId;
-
-
-
+public interface ProductoCarritoRepository extends JpaRepository<ProductoCarrito, ProductoCarritoId> {
 }
