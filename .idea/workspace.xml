@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fcb5c83-4dc4-44f8-9094-6aa57abd8d75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/CategoriaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/CategoriaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/CarritoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/DetalleFacturaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/FacturaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/ProductoCarritoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/ProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/CarritoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/DetalleFacturaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/FacturaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/ProductoCarritoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/ProductoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Carrito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/DetalleFactura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Factura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/ProductoCarrito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/akito_store/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/AkitoStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/AkitoStoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/akito_store/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Categoria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +47,9 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="2d9chKy3BbNIPQnkdZXysbZAq1w" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,6 +59,7 @@
     "Application.AkitoStoreApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/nicos/Donwloads/wenitas",

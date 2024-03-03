@@ -6,19 +6,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Categoria {
+public class Carrito {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long categoriaId;
+    private Long carritoId;
 
-    private String nombreCategoria;
+    private int clienteId;
 
-    public Long getCategoriaId() {
-        return categoriaId;
+    public Long getCarritoId() {
+        return carritoId;
     }
 
-    public void setCategoriaId(Long categoriaId) {
-        this.categoriaId = categoriaId;
+    public void setCarritoId(Long carritoId) {
+        this.carritoId = carritoId;
     }
 }
