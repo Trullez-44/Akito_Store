@@ -10,44 +10,44 @@ public class Factura {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "pedido_id")
-    private Integer pedidoId;
+    @Column(name = "factura_id")
+    private Integer facturaId;
 
     private Integer clienteId;
     @Timespan
-    private LocalDate fechaPedido;
+    private LocalDate fechaFactura;
 
-    private double totalPedido;
+    private double totalFactura;
 
-    public Integer getPedidoId() {
-        return pedidoId;
+    public Integer getFacturaId() {
+        return facturaId;
     }
 
-    public void setPedidoId(Integer pedidoId) {
-        this.pedidoId = pedidoId;
+    public void setFacturaId(Integer facturaId) {
+        this.facturaId = facturaId;
     }
 
     public Integer getClienteId() {
         return clienteId;
     }
 
-    public void setClienteId(int clienteId) {
+    public void setClienteId(Integer clienteId) {
         this.clienteId = clienteId;
     }
 
-    public LocalDate getFechaPedido() {
-        return fechaPedido;
+    public LocalDate getFechaFactura() {
+        return fechaFactura;
     }
 
-    public void setFechaPedido(LocalDate fechaPedido) {
-        this.fechaPedido = fechaPedido;
+    public void setFechaFactura(LocalDate fechaFactura) {
+        this.fechaFactura = fechaFactura;
     }
 
-    public double getTotalPedido() {
-        return totalPedido;
+    public double getTotalFactura() {
+        return totalFactura;
     }
 
-    public void setTotalPedido(double totalPedido) {
-        this.totalPedido = totalPedido;
+    public void setTotalFactura(double totalFactura) {
+        this.totalFactura = totalFactura;
     }
 }

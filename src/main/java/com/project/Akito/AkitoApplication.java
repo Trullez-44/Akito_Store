@@ -1,5 +1,6 @@
 package com.project.Akito;
 
+import com.project.Akito.domain.repository.ClienteRepository;
 import com.project.Akito.domain.service.*;
 import com.project.Akito.persintence.entity.*;
 import org.springframework.boot.SpringApplication;
@@ -15,23 +16,24 @@ public class AkitoApplication {
 	public static void main(String[] args) {
 
 		ConfigurableApplicationContext contexto = SpringApplication.run(AkitoApplication.class, args);
-		CarritoService carritoService = contexto.getBean(CarritoService.class);
-		CategoriaService categoriaService = contexto.getBean(CategoriaService.class);
+		// CarritoService carritoService = contexto.getBean(CarritoService.class);
+		// CategoriaService categoriaService = contexto.getBean(CategoriaService.class);
 		ClienteService clienteService = contexto.getBean(ClienteService.class);
-		DetalleFacturaService detalleFacturaService = contexto.getBean(DetalleFacturaService.class);
-		FacturaService facturaService = contexto.getBean(FacturaService.class);
-		ProductoCarritoService productoCarritoService = contexto.getBean(ProductoCarritoService.class);
-		ProductoService productoService = contexto.getBean(ProductoService.class);
+		// DetalleFacturaService detalleFacturaService = contexto.getBean(DetalleFacturaService.class);
+		// FacturaService facturaService = contexto.getBean(FacturaService.class);
+		// ProductoCarritoService productoCarritoService = contexto.getBean(ProductoCarritoService.class);
+		// ProductoService productoService = contexto.getBean(ProductoService.class);
 
-//		Clientes XD
-//		Cliente cli = new Cliente();
-//		cli.setNombre("Andys");
-//		cli.setApellido("Corzos");
-//		cli.setDireccion("Campus");
-//		cli.setCorreoElectronico("MiCorreo@CorreoMio.correo.mio");
-//		cli.setTelefono("3213203002");
-//
-//		clienteService.saveCliente(cli);
+		// Clientes XD
+		Cliente cli = new Cliente();
+		cli.setNombre("Andys");
+		cli.setApellido("Corzos");
+		cli.setDireccion("Campus");
+		cli.setCorreoElectronico("MiCorreo@CorreoMio.correo.mio");
+		cli.setTelefono("3213203002");
+
+		clienteService.saveCliente(cli);
+		// clienteService.findByNombre("Andys");
 
 //		Producto :(
 //		Producto pro = new Producto();

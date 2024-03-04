@@ -11,7 +11,6 @@ public class Producto {
     private Integer producoId;
 
     private String nombreProducto;
-    private String tipo;
     private double precio;
     private int stockDisponible;
     private int categoriaId;
@@ -30,14 +29,6 @@ public class Producto {
 
     public void setNombreProducto(String nombreProducto) {
         this.nombreProducto = nombreProducto;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public double getPrecio() {
@@ -69,7 +60,6 @@ public class Producto {
         return "Producto{" +
                 "producoId=" + producoId +
                 ", nombreProducto='" + nombreProducto + '\'' +
-                ", tipo='" + tipo + '\'' +
                 ", precio=" + precio +
                 ", stockDisponible=" + stockDisponible +
                 ", categoriaId=" + categoriaId +
