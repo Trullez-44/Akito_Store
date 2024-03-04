@@ -25,9 +25,9 @@ public class AkitoApplication {
 
 //		Clientes XD
 //		Cliente cli = new Cliente();
-//		cli.setNombre("Nicolas");
-//		cli.setApellido("Ruiz");
-//		cli.setDireccion("Casa");
+//		cli.setNombre("Andys");
+//		cli.setApellido("Corzos");
+//		cli.setDireccion("Campus");
 //		cli.setCorreoElectronico("MiCorreo@CorreoMio.correo.mio");
 //		cli.setTelefono("3213203002");
 //
@@ -45,7 +45,7 @@ public class AkitoApplication {
 
 //		Carrito :V  	REVISAR
 //		Carrito carr = new Carrito();
-//		carr.setCarritoId(1);
+//		carr.setClienteId(2);
 //
 //		carritoService.saveCarrito(carr);
 
@@ -67,12 +67,12 @@ public class AkitoApplication {
 //		detalleFacturaService.saveDetalleFactura(detFac);
 
 //		Producto Carrito :!
-		ProductoCarrito proCarr = new ProductoCarrito();
-		proCarr.setCarritoId(1);
-		proCarr.setProductoId(1);
-		proCarr.setCantidadProducto(5);
-
-		productoCarritoService.saveProducto(proCarr);
+//		ProductoCarrito proCarr = new ProductoCarrito();
+//		proCarr.setCarritoId(4);
+//		proCarr.setProductoId(1);
+//		proCarr.setCantidadProducto(5);
+//
+//		productoCarritoService.saveProducto(proCarr);
 
 //		Categoria :)
 //		Categoria cate1 = new Categoria();

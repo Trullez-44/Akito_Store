@@ -20,4 +20,20 @@ public class Carrito {
 
         this.carritoId = carritoId;
     }
+
+    public Integer getClienteId() {
+        return clienteId;
+    }
+
+    public void setClienteId(Integer clienteId) {
+        this.clienteId = clienteId;
+    }
+
+    @Override
+    public String toString() {
+        return "Carrito{" +
+                "carritoId=" + carritoId +
+                ", clienteId=" + clienteId +
+                '}';
+    }
 }
