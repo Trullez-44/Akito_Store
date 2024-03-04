@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fcb5c83-4dc4-44f8-9094-6aa57abd8d75" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Akito_Store.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/AkitoStoreApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/CarritoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/CategoriaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/ClienteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/DetalleFacturaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/FacturaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/ProductoCarritoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/repository/ProductoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/CarritoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/CategoriaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/ClienteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/DetalleFacturaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/FacturaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/ProductoCarritoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/domain/service/ProductoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Carrito.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Categoria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/DetalleFactura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Factura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/java/springdatajpa/akito_store/persistence/entity/ProductoCarrito.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/akito_store/src/test/java/springdatajpa/akito_store/AkitoStoreApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9fa108a7-9cba-4cb4-b2d5-b24dff9e459e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,76 +13,50 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Trullez-44&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="3e3629ca-52ab-43f1-a6dc-985d9c069fed" />
-        <option name="url" value="https://github.com/Trullez-44/Akito_Store.git" />
-      </UrlAndAccount>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2d9chKy3BbNIPQnkdZXysbZAq1w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2d3BM6Towx13jmAxbJnvItI7sCv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AkitoApplication.executor": "Run",
-    "Application.AkitoStoreApplication.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SpringProjects/Beans",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AkitoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GatoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.project.Akito.AkitoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/nicos/Donwloads/akito_store/Akito_Store&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.AkitoApplication">
-    <configuration name="AkitoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tienda.Akito.AkitoApplication" />
+}</component>
+  <component name="RunManager">
+    <configuration name="com.project.Akito.AkitoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.project.Akito.AkitoApplication" />
       <module name="Akito" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tienda.Akito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AkitoStoreApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="springdatajpa.akito_store.AkitoStoreApplication" />
-      <module name="akito_store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springdatajpa.akito_store.*" />
+          <option name="PATTERN" value="com.example.Akito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,8 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AkitoApplication" />
-        <item itemvalue="Application.AkitoStoreApplication" />
+        <item itemvalue="Application.com.project.Akito.AkitoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -146,11 +80,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2fcb5c83-4dc4-44f8-9094-6aa57abd8d75" name="Changes" comment="" />
-      <created>1709423852424</created>
+      <changelist id="9fa108a7-9cba-4cb4-b2d5-b24dff9e459e" name="Changes" comment="" />
+      <created>1709226830967</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709423852424</updated>
+      <updated>1709226830967</updated>
     </task>
     <servers />
   </component>
