@@ -1,5 +1,6 @@
 package com.project.Akito.persintence.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -22,6 +23,7 @@ public class Cliente {
     private String correoElectronico;
     @Column(name = "telefono", nullable = false)
     private String telefono;
+    @JsonManagedReference
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
     private List<Factura> facturas;
 

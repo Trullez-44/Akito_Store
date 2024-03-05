@@ -1,5 +1,6 @@
 package com.project.Akito.persintence.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jdk.jfr.Timespan;
 
@@ -23,6 +24,7 @@ public class Factura {
     @Column(name = "total_Factura", nullable = false)
     private double totalFactura;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;

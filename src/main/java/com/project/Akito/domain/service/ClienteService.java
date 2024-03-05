@@ -50,5 +50,15 @@ public class ClienteService {
 
         clienteRepository.deleteById(id);
     }
-
+    public Cliente updateCliente(Cliente cliente) {
+        Cliente existingCliente = clienteRepository.findById(cliente.getClienteId()).orElse(null);
+        if (existingCliente != null) {
+            existingCliente.setNombre(cliente.getNombre());
+            existingCliente.setApellido(cliente.getApellido());
+            // Aquí puedes agregar más campos del cliente que quieras actualizar
+            return clienteRepository.save(existingCliente);
+        } else {
+            return null;
+        }
+    }
 }

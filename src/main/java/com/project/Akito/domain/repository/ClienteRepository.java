@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
-//   @Query("SELECT c FROM Cliente c WHERE LOWER(c.nombre) LIKE LOWER(CONCAT('%', :nombre, '%')) AND LOWER(c.apellido) LIKE LOWER(CONCAT('%', :apellido, '%'))")
+//   @Query("SELECT c FROM Cliente c WHERE LOWER(c.nombre) LIKE LOWER(CONCAT('%',Amarillo, '%')) AND LOWER(c.apellido) LIKE LOWER(CONCAT('%',Los platanos, '%'))")
 //   List<Cliente> findByNombreAndApellido(@Param("nombre") String nombre, @Param("apellido") String apellido);
 //
 //

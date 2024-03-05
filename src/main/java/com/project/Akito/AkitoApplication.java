@@ -27,13 +27,12 @@ public class AkitoApplication {
 
         // Clientes XD
 //        Cliente cli = new Cliente();
-//        cli.setNombre("Nicolas");
-//        cli.setApellido("Ruiz");
+//        cli.setNombre("dad");
+//        cli.setApellido("Rudasdsaiz");
 //        cli.setDireccion("Campus");
 //        cli.setCorreoElectronico("MiCorreo@CorreoMio.correo.mio");
 //        cli.setTelefono("3213203002");
-//
-//
+
 //        clienteService.saveCliente(cli);
 //        // clienteService.findByNombre("Andys");
 //
@@ -62,15 +61,15 @@ public class AkitoApplication {
 //
 //
 //        carritoService.saveCarrito(carr);
-//
-////		Factura :/
+
+//		Factura :/
 //        Factura fac = new Factura();
 //        fac.setCliente(cli);
 //        fac.setFechaFactura(LocalDate.parse("2023-03-03"));
 //        fac.setTotalFactura(5000);
 //
 //        facturaService.saveFactura(fac);
-//
+
 ////		Detalle Facura :|
 //        DetalleFactura detFac = new DetalleFactura();
 //        detFac.setFactura(fac);
