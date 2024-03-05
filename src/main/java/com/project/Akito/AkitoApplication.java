@@ -79,7 +79,7 @@ public class AkitoApplication {
         detFac.setPrecioUnitario(5000);
 
         detalleFacturaService.saveDetalleFactura(detFac);
-        
+
         List<Cliente>  lista = new ArrayList<>();
         lista = clienteService.findByNombre("Nicolas");
         System.out.printf(lista.toString());
