@@ -17,8 +17,8 @@ public class Producto {
     private double precio;
     @Column(name = "stock_Disponible", nullable = false)
     private int stockDisponible;
-    @Column(name = "categoria_Id", nullable = false)
-    private int categoriaId;
+//    @Column(name = "categoria_Id", nullable = false)
+//    private int categoriaId;
 
     @ManyToMany(
             fetch = FetchType.LAZY
@@ -30,9 +30,20 @@ public class Producto {
     )
     private List<Carrito> carritos;
 
-    @ManyToOne
-    @JoinColumn(name = "categoria_id")
+
+    @ManyToMany(mappedBy = "productos")
     private List<Categoria> categorias;
+
+    @OneToMany(mappedBy = "producto")
+    private List<DetalleFactura> detallesFactura;
+
+    public List<DetalleFactura> getDetallesFactura() {
+        return detallesFactura;
+    }
+
+    public void setDetallesFactura(List<DetalleFactura> detallesFactura) {
+        this.detallesFactura = detallesFactura;
+    }
 
     public Integer getProducoId() {
         return producoId;
@@ -66,14 +77,6 @@ public class Producto {
         this.stockDisponible = stockDisponible;
     }
 
-    public int getCategoriaId() {
-        return categoriaId;
-    }
-
-    public void setCategoriaId(int categoriaId) {
-        this.categoriaId = categoriaId;
-    }
-
     public List<Carrito> getCarritos() {
         return carritos;
     }
@@ -97,7 +100,6 @@ public class Producto {
                 ", nombreProducto='" + nombreProducto + '\'' +
                 ", precio=" + precio +
                 ", stockDisponible=" + stockDisponible +
-                ", categoriaId=" + categoriaId +
                 ", carritos=" + carritos +
                 ", categorias=" + categorias +
                 '}';

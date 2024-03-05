@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jdk.jfr.Timespan;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table (name = "Factura")
@@ -25,6 +26,9 @@ public class Factura {
     @ManyToOne
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
+
+    @OneToMany(mappedBy = "factura", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<DetalleFactura> detallesFactura;
 
     public Integer getFacturaId() {
         return facturaId;
@@ -58,6 +62,14 @@ public class Factura {
         this.cliente = cliente;
     }
 
+    public List<DetalleFactura> getDetallesFactura() {
+        return detallesFactura;
+    }
+
+    public void setDetallesFactura(List<DetalleFactura> detallesFactura) {
+        this.detallesFactura = detallesFactura;
+    }
+
     @Override
     public String toString() {
         return "Factura{" +
@@ -65,6 +77,7 @@ public class Factura {
                 ", fechaFactura=" + fechaFactura +
                 ", totalFactura=" + totalFactura +
                 ", cliente=" + cliente +
+                ", detallesFactura=" + detallesFactura +
                 '}';
     }
 

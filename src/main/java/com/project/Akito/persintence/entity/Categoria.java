@@ -14,9 +14,13 @@ public class Categoria {
     @Column(name = "nombre_Categoria", nullable = false)
     private String nombreCategoria;
 
-    @OneToMany(mappedBy = "categoria",fetch = FetchType.LAZY)
-    private Producto producto;
-
+    @ManyToMany
+    @JoinTable(
+            name = "producto_categoria",
+            joinColumns = @JoinColumn(name = "categoria_id"),
+            inverseJoinColumns = @JoinColumn(name = "producto_id")
+    )
+    private List<Producto> productos;
     public Integer getCategoriaId() {
         return categoriaId;
     }
@@ -33,12 +37,12 @@ public class Categoria {
         this.nombreCategoria = nombreCategoria;
     }
 
-    public Producto getProducto() {
-        return producto;
+    public List<Producto> getProductos() {
+        return productos;
     }
 
-    public void setProducto(Producto producto) {
-        this.producto = producto;
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 
     @Override
@@ -46,7 +50,7 @@ public class Categoria {
         return "Categoria{" +
                 "categoriaId=" + categoriaId +
                 ", nombreCategoria='" + nombreCategoria + '\'' +
-                ", producto=" + producto +
+                ", productos=" + productos +
                 '}';
     }
 

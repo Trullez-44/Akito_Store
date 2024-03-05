@@ -11,11 +11,23 @@ public class Carrito {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "carrito_id")
     private Integer carritoId;
-    @Column(name = "cliente_Id", nullable = false)
-    private Integer clienteId;
+//    @Column(name = "cliente_Id", nullable = false)
+//    private Integer clienteId;
 
     @ManyToMany(mappedBy ="carritos")
     List<Producto> productos;
+
+    @OneToOne
+    @JoinColumn(name = "cliente_id", unique = true)
+    private Cliente cliente;
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
     public Integer getCarritoId() {
         return carritoId;
@@ -23,14 +35,6 @@ public class Carrito {
 
     public void setCarritoId(Integer carritoId) {
         this.carritoId = carritoId;
-    }
-
-    public Integer getClienteId() {
-        return clienteId;
-    }
-
-    public void setClienteId(Integer clienteId) {
-        this.clienteId = clienteId;
     }
 
     public List<Producto> getProductos() {
@@ -45,8 +49,8 @@ public class Carrito {
     public String toString() {
         return "Carrito{" +
                 "carritoId=" + carritoId +
-                ", clienteId=" + clienteId +
                 ", productos=" + productos +
+                ", cliente=" + cliente +
                 '}';
     }
 
