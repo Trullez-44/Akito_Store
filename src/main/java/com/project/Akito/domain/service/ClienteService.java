@@ -13,6 +13,26 @@ public class ClienteService {
     @Autowired
     private ClienteRepository clienteRepository;
 
+//    public List<Cliente> findByNombreAndApellido(String nombre, String apellido) {
+//        return clienteRepository.findByNombreAndApellido(nombre, apellido);
+//    }
+//
+//    public Long countClientes() {
+//        return clienteRepository.countClientes();
+//    }
+//
+//    public List<Cliente> findClientesConFacturasPendientes() {
+//        return clienteRepository.findClientesConFacturasPendientes();
+//    }
+//
+//    public List<Cliente> findByDireccion(String direccion) {
+//        return clienteRepository.findByDireccion(direccion);
+//    }
+//
+//    public List<Cliente> findClientesConCarritoVacio() {
+//        return clienteRepository.findClientesConCarritoVacio();
+//    }
+
     public List<Cliente> getAll() {
         return clienteRepository.findAll();
     }
@@ -31,7 +51,4 @@ public class ClienteService {
         clienteRepository.deleteById(id);
     }
 
-    public  List<Cliente> findByNombre(String nombre){
-        return clienteRepository.findByNombre(nombre);
-    }
 }

@@ -11,21 +11,24 @@ import java.util.List;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
-   List<Cliente> findByNombre(String nombre);
+//   @Query("SELECT c FROM Cliente c WHERE LOWER(c.nombre) LIKE LOWER(CONCAT('%', :nombre, '%')) AND LOWER(c.apellido) LIKE LOWER(CONCAT('%', :apellido, '%'))")
+//   List<Cliente> findByNombreAndApellido(@Param("nombre") String nombre, @Param("apellido") String apellido);
+//
+//
+//   @Query("SELECT COUNT(c) FROM Cliente c")
+//   Long countClientes();
+//
+//   @Query("SELECT DISTINCT c FROM Cliente c JOIN c.facturas f WHERE f.pagado = false")
+//   List<Cliente> findClientesConFacturasPendientes();
+//
+//
+//
+//   @Query("SELECT c FROM Cliente c WHERE LOWER(c.direccion) LIKE LOWER(CONCAT('%', :direccion, '%'))")
+//   List<Cliente> findByDireccion(@Param("direccion") String direccion);
+//
+//
+//   @Query("SELECT c FROM Cliente c WHERE c.carrito IS NOT NULL AND c.carrito.productos IS EMPTY")
+//   List<Cliente> findClientesConCarritoVacio();
 
-   List<Cliente> findByApellido(String apellido);
-
-   Cliente findByCorreoElectronico(String correoElectronico);
-
-   boolean existsByCorreoElectronico(String correoElectronico);
-
-   boolean existsByTelefono(String telefono);
-
-   @Query("SELECT COUNT(c) FROM Cliente c WHERE c.correoElectronico LIKE %:dominio")
-   int countClientesByEmailDomain(@Param("dominio") String dominio);
-
-   @Modifying
-   @Query("UPDATE Cliente c SET c.direccion = :direccion WHERE c.clienteId = :clienteId")
-   void updateDireccion(@Param("clienteId") Long clienteId, @Param("direccion") String direccion);
 
 }

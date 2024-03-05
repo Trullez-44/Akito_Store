@@ -8,19 +8,19 @@ import java.util.List;
 
 public interface ProductoRepository extends JpaRepository<Producto, Integer> {
 
-    // Buscar producto por nombre
-    Producto findByNombreProducto(String nombreProducto);
-
-    // Contar cuántos productos existen
-    Long countAll();
-
-    // Eliminar producto por nombre
-    void deleteByNombreProducto(String nombreProducto);
-
-    // Verificar si existe un producto por nombre
-    Boolean existsByNombreProducto(String nombreProducto);
-
-    // Buscar todos los productos
-    List<Producto> findAll();
+//    // Buscar producto por nombre
+//    Producto findByNombreProducto(String nombreProducto);
+//
+//    // Contar cuántos productos existen
+//    Long countAll();
+//
+//    // Eliminar producto por nombre
+//    void deleteByNombreProducto(String nombreProducto);
+//
+//    // Verificar si existe un producto por nombre
+//    Boolean existsByNombreProducto(String nombreProducto);
+//
+//    // Buscar todos los productos
+//    List<Producto> findAll();
 }
 
