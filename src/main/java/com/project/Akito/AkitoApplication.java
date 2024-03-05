@@ -34,9 +34,9 @@ public class AkitoApplication {
 //        cli.setTelefono("3213203002");
 
 //        clienteService.saveCliente(cli);
-//        // clienteService.findByNombre("Andys");
-//
-////		Categoria :)
+////        // clienteService.findByNombre("Andys");
+////
+//////		Categoria :)
 //        Categoria cate1 = new Categoria();
 //        cate1.setNombreCategoria("Anime");
 //        categoriaService.saveCategoria(cate1);
@@ -78,10 +78,12 @@ public class AkitoApplication {
 //        detFac.setPrecioUnitario(5000);
 //
 //        detalleFacturaService.saveDetalleFactura(detFac);
-//
+
 //        List<Cliente>  lista = new ArrayList<>();
 //        lista = clienteService.findByNombre("Nicolas");
 //        System.out.printf(lista.toString());
+
+
     }
 
 }

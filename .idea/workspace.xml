@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fa108a7-9cba-4cb4-b2d5-b24dff9e459e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/web/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/web/controller/DetalleFacturaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/web/controller/FacturaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/web/controller/ProductoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/AkitoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/AkitoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/repository/ClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/repository/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/repository/ProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/CategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/DetalleFacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/DetalleFacturaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/FacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/FacturaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/domain/service/ProductoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/DetalleFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/DetalleFactura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/persintence/entity/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Akito/web/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Akito/web/controller/CategoriaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +65,7 @@
     "Application.com.project.Akito.AkitoApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/nicos/Donwloads/akito_store/Akito_Store"
   }

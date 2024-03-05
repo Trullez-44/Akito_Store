@@ -39,26 +39,28 @@ public class CategoriaController {
     }
 
     @PostMapping
-    public ResponseEntity<Categoria> createCategoria(@RequestBody Categoria categoria) {
-        Categoria createdCategoria = categoriaService.saveCategoria(categoria);
-        return new ResponseEntity<>(createdCategoria, HttpStatus.CREATED);
+    public Categoria saveCategoria(@RequestBody Categoria categoria) {
+
+        return categoriaService.saveCategoria(categoria);
     }
 
-//    @PutMapping("/{categoriaId}")
-//    public ResponseEntity<Categoria> updateCategoria(@PathVariable Integer categoriaId, @RequestBody Categoria nuevaCategoria) {
-//        Optional<Categoria> updatedCategoria = categoriaService.updateCategoria(categoriaId, nuevaCategoria);
-//        if (updatedCategoria.isPresent()) {
-//            return new ResponseEntity<>(updatedCategoria.get(), HttpStatus.OK);
-//        } else {
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        }
-//    }
 
     @DeleteMapping("/{categoriaId}")
     public ResponseEntity<Void> deleteCategoria(@PathVariable Integer categoriaId) {
         boolean deleted = categoriaService.deleteCategoria(categoriaId);
         if (deleted) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PutMapping("/{categoriaId}")
+    public ResponseEntity<Categoria> updateCategoria(@PathVariable Integer categoriaId, @RequestBody Categoria nuevaCategoria) {
+        Categoria categoriaActualizada = categoriaService.updateCategoria(categoriaId, nuevaCategoria);
+
+        if (categoriaActualizada != null) {
+            return new ResponseEntity<>(categoriaActualizada, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
