@@ -26,64 +26,63 @@ public class AkitoApplication {
         ProductoService productoService = contexto.getBean(ProductoService.class);
 
         // Clientes XD
-//        Cliente cli = new Cliente();
-//        cli.setNombre("Andys");
-//        cli.setApellido("Cosrzos");
-//        cli.setDireccion("Campus");
-//        cli.setCorreoElectronico("MiCorreo@CorreoMio.correo.mio");
-//        cli.setTelefono("3213203002");
-//
-//
-//        clienteService.saveCliente(cli);
-//        // clienteService.findByNombre("Andys");
-//
-////		Categoria :)
-//        Categoria cate1 = new Categoria();
-//        cate1.setNombreCategoria("Anime");
-//        categoriaService.saveCategoria(cate1);
-//
-////		Producto :(
-//        Producto pro = new Producto();
-//        pro.setNombreProducto("JJT Kaisen");
-//        pro.setPrecio(5000);
-//        pro.setStockDisponible(100);
-//        pro.setCategoriaId(1);
-//
-//        productoService.saveProducto(pro);
-//
-////		Carrito :V  	REVISAR
-//        Carrito carr = new Carrito();
-//        carr.setClienteId(1);
-//
-//        carritoService.saveCarrito(carr);
-//
-////		Factura :/
-//        Factura fac = new Factura();
-//        fac.setClienteId(1);
-//        fac.setFechaFactura(LocalDate.parse("2023-03-03"));
-//        fac.setTotalFactura(5000);
-//
-//        facturaService.saveFactura(fac);
-//
-////		Detalle Facura :|
-//        DetalleFactura detFac = new DetalleFactura();
-//        detFac.setFacturaId(1);
-//        detFac.setProductoId(1);
-//        detFac.setCantidadProducto(1);
-//        detFac.setPrecioUnitario(5000);
-//
-//        detalleFacturaService.saveDetalleFactura(detFac);
-//
-////	    Producto Carrito :!
-//        ProductoCarrito proCarr = new ProductoCarrito();
-//        proCarr.setCarritoId(4);
-//        proCarr.setProductoId(1);
-//        proCarr.setCantidadProducto(5);
-//
-//        productoCarritoService.saveProducto(proCarr);
-//        List<Cliente>  lista = new ArrayList<>();
-//        lista = clienteService.findByNombre("Nicolas");
-//        System.out.printf(lista.toString());
+        Cliente cli = new Cliente();
+        cli.setNombre("Nicolas");
+        cli.setApellido("Ruiz");
+        cli.setDireccion("Campus");
+        cli.setCorreoElectronico("MiCorreo@CorreoMio.correo.mio");
+        cli.setTelefono("3213203002");
+
+
+        clienteService.saveCliente(cli);
+        // clienteService.findByNombre("Andys");
+
+//		Categoria :)
+        Categoria cate1 = new Categoria();
+        cate1.setNombreCategoria("Anime");
+        categoriaService.saveCategoria(cate1);
+
+//		Producto :(
+        Producto pro = new Producto();
+        List<Categoria> categorias = new ArrayList<>();
+        categorias.add(cate1);
+        pro.setNombreProducto("JJT Kaisen");
+        pro.setPrecio(5000);
+        pro.setStockDisponible(100);
+        pro.setCategorias(categorias);
+
+        productoService.saveProducto(pro);
+
+//		Carrito :V  	REVISAR
+        Carrito carr = new Carrito();
+        List<Producto> productos = new ArrayList<>();
+        productos.add(pro);
+        carr.setCliente(cli);
+        carr.setProductos(productos);
+
+
+        carritoService.saveCarrito(carr);
+
+//		Factura :/
+        Factura fac = new Factura();
+        fac.setCliente(cli);
+        fac.setFechaFactura(LocalDate.parse("2023-03-03"));
+        fac.setTotalFactura(5000);
+
+        facturaService.saveFactura(fac);
+
+//		Detalle Facura :|
+        DetalleFactura detFac = new DetalleFactura();
+        detFac.setFactura(fac);
+        detFac.setProducto(pro);
+        detFac.setCantidadProducto(1);
+        detFac.setPrecioUnitario(5000);
+
+        detalleFacturaService.saveDetalleFactura(detFac);
+        
+        List<Cliente>  lista = new ArrayList<>();
+        lista = clienteService.findByNombre("Nicolas");
+        System.out.printf(lista.toString());
     }
 
 }

@@ -21,14 +21,6 @@ public class Carrito {
     @JoinColumn(name = "cliente_id", unique = true)
     private Cliente cliente;
 
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
     public Integer getCarritoId() {
         return carritoId;
     }
@@ -43,6 +35,14 @@ public class Carrito {
 
     public void setProductos(List<Producto> productos) {
         this.productos = productos;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     @Override
