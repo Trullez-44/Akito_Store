@@ -30,4 +30,8 @@ public class ClienteService {
 
         clienteRepository.deleteById(id);
     }
+
+    public  List<Cliente> findByNombre(String nombre){
+        return clienteRepository.findByNombre(nombre);
+    }
 }

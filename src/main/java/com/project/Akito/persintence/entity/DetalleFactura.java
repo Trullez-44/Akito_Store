@@ -9,10 +9,13 @@ public class DetalleFactura {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "detalle_factura_id")
     private Integer detalleFacturaId;
-
+    @Column(name = "factura_Id", nullable = false)
     private Integer facturaId;
+    @Column(name = "producto_Id", nullable = false)
     private Integer productoId;
+    @Column(name = "cantidad_Producto", nullable = false)
     private int cantidadProducto;
+    @Column(name = "precio_Unitario", nullable = false)
     private double precioUnitario;
     
     public Integer getDetalleFacturaId() {
@@ -45,6 +48,15 @@ public class DetalleFactura {
     public void setPrecioUnitario(double precioUnitario) {
         this.precioUnitario = precioUnitario;
     }
- 
-    
+
+    @Override
+    public String toString() {
+        return "DetalleFactura{" +
+                "detalleFacturaId=" + detalleFacturaId +
+                ", facturaId=" + facturaId +
+                ", productoId=" + productoId +
+                ", cantidadProducto=" + cantidadProducto +
+                ", precioUnitario=" + precioUnitario +
+                '}';
+    }
 }

@@ -6,6 +6,7 @@ import jdk.jfr.Timespan;
 import java.time.LocalDate;
 
 @Entity
+@Table (name = "Factura")
 public class Factura {
 
     @Id
@@ -13,11 +14,17 @@ public class Factura {
     @Column(name = "factura_id")
     private Integer facturaId;
 
-    private Integer clienteId;
+//    @Column(name = "cliente_Id", nullable = false)
+//    private Integer clienteId;
     @Timespan
+    @Column(name = "fecha_Factura", nullable = false)
     private LocalDate fechaFactura;
-
+    @Column(name = "total_Factura", nullable = false)
     private double totalFactura;
+
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
 
     public Integer getFacturaId() {
         return facturaId;
@@ -25,14 +32,6 @@ public class Factura {
 
     public void setFacturaId(Integer facturaId) {
         this.facturaId = facturaId;
-    }
-
-    public Integer getClienteId() {
-        return clienteId;
-    }
-
-    public void setClienteId(Integer clienteId) {
-        this.clienteId = clienteId;
     }
 
     public LocalDate getFechaFactura() {
@@ -49,5 +48,33 @@ public class Factura {
 
     public void setTotalFactura(double totalFactura) {
         this.totalFactura = totalFactura;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    @Override
+    public String toString() {
+        return "Factura{" +
+                "facturaId=" + facturaId +
+                ", fechaFactura=" + fechaFactura +
+                ", totalFactura=" + totalFactura +
+                ", cliente=" + cliente +
+                '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }

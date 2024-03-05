@@ -2,6 +2,8 @@ package com.project.Akito.persintence.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Cliente {
 
@@ -9,12 +11,19 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cliente_id")
     private Integer clienteId;
-
+    @Column(name = "nombre", nullable = false)
     private String nombre;
+
+    @Column(name = "apellido", nullable = false)
     private String apellido;
+    @Column(name = "direccion", nullable = false)
     private String direccion;
+    @Column(name = "correoElectronico", nullable = false)
     private String correoElectronico;
+    @Column(name = "telefono", nullable = false)
     private String telefono;
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+    private List<Factura> facturas;
 
     public Cliente() {
     }

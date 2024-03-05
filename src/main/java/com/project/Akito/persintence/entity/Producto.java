@@ -2,6 +2,8 @@ package com.project.Akito.persintence.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Producto {
 
@@ -9,11 +11,28 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "producto_id")
     private Integer producoId;
-
+    @Column(name = "nombre_Producto", nullable = false)
     private String nombreProducto;
+    @Column(name = "precio", nullable = false)
     private double precio;
+    @Column(name = "stock_Disponible", nullable = false)
     private int stockDisponible;
+    @Column(name = "categoria_Id", nullable = false)
     private int categoriaId;
+
+    @ManyToMany(
+            fetch = FetchType.LAZY
+    )
+    @JoinTable(
+            name = "producto_carrito",
+            joinColumns = @JoinColumn(name = "producto_id"),
+            inverseJoinColumns = @JoinColumn(name = "carrito_id")
+    )
+    private List<Carrito> carritos;
+
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private List<Categoria> categorias;
 
     public Integer getProducoId() {
         return producoId;
@@ -55,6 +74,22 @@ public class Producto {
         this.categoriaId = categoriaId;
     }
 
+    public List<Carrito> getCarritos() {
+        return carritos;
+    }
+
+    public void setCarritos(List<Carrito> carritos) {
+        this.carritos = carritos;
+    }
+
+    public List<Categoria> getCategorias() {
+        return categorias;
+    }
+
+    public void setCategorias(List<Categoria> categorias) {
+        this.categorias = categorias;
+    }
+
     @Override
     public String toString() {
         return "Producto{" +
@@ -63,6 +98,18 @@ public class Producto {
                 ", precio=" + precio +
                 ", stockDisponible=" + stockDisponible +
                 ", categoriaId=" + categoriaId +
+                ", carritos=" + carritos +
+                ", categorias=" + categorias +
                 '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }

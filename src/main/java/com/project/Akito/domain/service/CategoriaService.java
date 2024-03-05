@@ -2,6 +2,7 @@ package com.project.Akito.domain.service;
 
 import com.project.Akito.persintence.entity.Categoria;
 import com.project.Akito.domain.repository.CategoriaRepository;
+import com.project.Akito.persintence.entity.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
