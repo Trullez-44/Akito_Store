@@ -3,6 +3,7 @@ package com.project.Akito.domain.service;
 import com.project.Akito.persintence.entity.Categoria;
 import com.project.Akito.domain.repository.CategoriaRepository;
 import com.project.Akito.persintence.entity.Producto;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,33 +34,21 @@ public class CategoriaService {
         categoriaRepository.deleteById(id);
         return false;
     }
-//    public Optional<Categoria> updateCategoria(Integer id, Categoria nuevaCategoria) {
-//        Optional<Categoria> categoriaOptional = categoriaRepository.findById(id);
-//        if (categoriaOptional.isPresent()) {
-//            Categoria categoriaExistente = categoriaOptional.get();
-//            categoriaExistente.setNombreCategoria(nuevaCategoria.getNombreCategoria());
-//            // Puedes agregar más actualizaciones según tus necesidades
-//
-//            return Optional.of(categoriaRepository.save(categoriaExistente));
-//        }
-//        return Optional.empty();
-//    }
-//    public Categoria updateNombreCategoria(Integer id, String nuevoNombre) {
-//        Categoria categoria = categoriaRepository.findById(id).orElse(null);
-//        if (categoria != null) {
-//            categoria.setNombreCategoria(nuevoNombre);
-//            return categoriaRepository.save(categoria);
-//        }
-//        return null;
-//    }
-//
-//    public Categoria agregarProductoACategoria(Integer idCategoria, Producto producto) {
-//        Categoria categoria = categoriaRepository.findById(idCategoria).orElse(null);
-//        if (categoria != null) {
-//            categoria.getProductos().add(producto);
-//            return categoriaRepository.save(categoria);
-//        }
-//        return null;
-//    }
+
+    public Categoria updateCategoria(Integer id, Categoria nuevaCategoria) {
+        Optional<Categoria> categoriaOptional = categoriaRepository.findById(id);
+
+        if (categoriaOptional.isPresent()) {
+            Categoria categoriaExistente = categoriaOptional.get();
+
+            // Copiar propiedades no nulas de nuevaCategoria a categoriaExistente
+            BeanUtils.copyProperties(nuevaCategoria, categoriaExistente, "categoriaId", "productos");
+
+            return categoriaRepository.save(categoriaExistente);
+        }
+
+        return null; // Devuelve null si no se encuentra la categoría con el ID proporcionado
+    }
+
 
 }

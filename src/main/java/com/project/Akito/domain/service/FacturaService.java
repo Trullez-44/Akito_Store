@@ -30,4 +30,21 @@ public class FacturaService {
         facturaRepository.deleteById(id);
     }
 
+    public Factura updateFactura(Integer id, Factura updatedFactura) {
+        Factura existingFactura = facturaRepository.findById(id).orElse(null);
+
+        if (existingFactura != null) {
+            // Actualizar los campos relevantes
+            existingFactura.setFechaFactura(updatedFactura.getFechaFactura());
+            existingFactura.setTotalFactura(updatedFactura.getTotalFactura());
+            existingFactura.setCliente(updatedFactura.getCliente());
+            existingFactura.setDetallesFactura(updatedFactura.getDetallesFactura());
+
+            // Guardar los cambios en la base de datos
+            return facturaRepository.save(existingFactura);
+        }
+
+        return null; // Manejar el caso donde la factura no existe
+    }
+
 }

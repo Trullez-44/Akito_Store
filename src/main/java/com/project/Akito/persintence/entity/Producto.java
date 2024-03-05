@@ -31,10 +31,10 @@ public class Producto {
     private List<Carrito> carritos;
 
 
-    @ManyToMany(mappedBy = "productos")
+    @ManyToMany(mappedBy = "productos", fetch = FetchType.LAZY)
     private List<Categoria> categorias;
 
-    @OneToMany(mappedBy = "producto")
+    @OneToMany(mappedBy = "producto", fetch = FetchType.LAZY)
     private List<DetalleFactura> detallesFactura;
 
     public List<DetalleFactura> getDetallesFactura() {

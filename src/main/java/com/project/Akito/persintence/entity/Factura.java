@@ -1,5 +1,9 @@
 package com.project.Akito.persintence.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import jdk.jfr.Timespan;
 
@@ -8,6 +12,7 @@ import java.util.List;
 
 @Entity
 @Table (name = "Factura")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "facturaId")
 public class Factura {
 
     @Id
@@ -22,8 +27,8 @@ public class Factura {
     private LocalDate fechaFactura;
     @Column(name = "total_Factura", nullable = false)
     private double totalFactura;
-
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 

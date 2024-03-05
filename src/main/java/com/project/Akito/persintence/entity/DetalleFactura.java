@@ -1,5 +1,6 @@
 package com.project.Akito.persintence.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,18 +10,17 @@ public class DetalleFactura {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "detalle_factura_id")
     private Integer detalleFacturaId;
-//    @Column(name = "factura_Id", nullable = false)
-//    private Integer facturaId;
+
     @Column(name = "cantidad_Producto", nullable = false)
     private int cantidadProducto;
     @Column(name = "precio_Unitario", nullable = false)
     private double precioUnitario;
-
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "factura_id")
     private Factura factura;
-
-    @ManyToOne
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "producto_id")
     private Producto producto;
 
